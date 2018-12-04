@@ -46,6 +46,8 @@ export class AppComponent implements OnInit  {
 }
 </pre>
 
+Note that you can find your approach to set language code and the messages by using `navigator.language` and XHR service respectively.
+
 Find the code for the HTML template,
 
 <pre>
@@ -53,7 +55,7 @@ Find the code for the HTML template,
   {{ "Select language" | translate }} : 
   &lt;select (change)="onLangChange($event.target.value)"&gt;
     &lt;optiongt;{{ "Select" | translate }}&lt;/option&gt;
-    &lt;option *ngFor="let lang of languages;" [value]="lang.code"gt; {{lang.lang}} &lt;/option&gt;
+    &lt;option *ngFor="let lang of languages;" [value]="lang.code"%gt; {{lang.lang}} &lt;/option&gt;
   &lt;/select&gt;
 &lt;/p&gt;
 &lt;hello name="{{ name }}"&gt;&lt;/hello&gt;
@@ -62,3 +64,17 @@ Find the code for the HTML template,
 &lt;/p&gt;
 &lt;p&gt; {{"helloAngular" | translate}} &lt;/p&gt;
 </pre>
+
+Note that `translate` is the pipe which transform your labels.
+
+FInally include the i18n folder to your `app` folder for the above approach but you can mantain this in your `assets` folder or even out side of your application context as well but in this case you have to make the XHR request for getting the labels/messages.
+
+## Demo
+
+Please find the below link as the demo.
+
+https://angular-localization-urh5tq.stackblitz.io/
+
+## Author
+
+learning.bikash@gmail.com
