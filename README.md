@@ -56,7 +56,7 @@ Find the code for the HTML template,
     &lt;option *ngFor="let lang of languages;" [value]="lang.code"gt; {{lang.lang}} &lt;/option&gt;
   &lt;/select&gt;
 &lt;/p&gt;
-&lt;hello name="{{ name }}"gt;&lt;/hello&gt;
+&lt;hello name="{{ name }}"&gt;&lt;/hello&gt;
 &lt;p&gt;
   Start editing to see some magic happen :)
 &lt;/p&gt;
