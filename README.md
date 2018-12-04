@@ -46,4 +46,19 @@ export class AppComponent implements OnInit  {
 }
 </pre>
 
+Find the code for the HTML template,
 
+<pre>
+<p>
+  {{ "Select language" | translate }} : 
+  <select (change)="onLangChange($event.target.value)">
+    <option>{{ "Select" | translate }}</option>
+    <option *ngFor="let lang of languages;" [value]="lang.code"> {{lang.lang}} </option>
+  </select>
+</p>
+<hello name="{{ name }}"></hello>
+<p>
+  Start editing to see some magic happen :)
+</p>
+<p> {{"helloAngular" | translate}} </p>
+</pre>
