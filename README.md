@@ -49,18 +49,16 @@ export class AppComponent implements OnInit  {
 Find the code for the HTML template,
 
 <pre>
-<code>
-<p>
+&lt;p&gt;
   {{ "Select language" | translate }} : 
-  <select (change)="onLangChange($event.target.value)">
-    <option>{{ "Select" | translate }}</option>
-    <option *ngFor="let lang of languages;" [value]="lang.code"> {{lang.lang}} </option>
-  </select>
-</p>
-<hello name="{{ name }}"></hello>
-<p>
+  &lt;select (change)="onLangChange($event.target.value)"&gt;
+    &lt;optiongt;{{ "Select" | translate }}&lt;/optiongt;
+    &lt;option *ngFor="let lang of languages;" [value]="lang.code"gt; {{lang.lang}} &lt;/optiongt;
+  &lt;/selectgt;
+&lt;/p&gt;
+&lt;hello name="{{ name }}"gt;&lt;/hellogt;
+&lt;p&gt;
   Start editing to see some magic happen :)
-</p>
-<p> {{"helloAngular" | translate}} </p>
-</code>
+&lt;/p&gt;
+&lt;p&gt; {{"helloAngular" | translate}} &lt;/p&gt;
 </pre>
