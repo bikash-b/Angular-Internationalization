@@ -8,7 +8,7 @@ First download or clone the `localization` folder to your project's app director
 Now you have to set the language code to the `LocalizeService` and provide the label json ( which consists list of key and value pair of the labels which you want to translate ). Follow the below code which needs to be mantain while loading your application.
 
 <pre>
-  import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { LocalizeService } from './localization/localize.service';
 import { messages_en_us } from './i18n/en-us';
 import { messages_fr } from './i18n/fr';
@@ -29,7 +29,6 @@ export class AppComponent implements OnInit  {
     let messages;
     let selectedLang: string = this.sLang ? this.sLang : 'en-US';
     this._locSvc.setLangCode(selectedLang);
-    //selectedLang = this._locSvc.getLangCode();
     if(selectedLang === 'en-US'){
       messages = messages_en_us;
     }else if(selectedLang === 'fr'){
