@@ -49,6 +49,7 @@ export class AppComponent implements OnInit  {
 Find the code for the HTML template,
 
 <pre>
+<code>
 <p>
   {{ "Select language" | translate }} : 
   <select (change)="onLangChange($event.target.value)">
@@ -61,4 +62,5 @@ Find the code for the HTML template,
   Start editing to see some magic happen :)
 </p>
 <p> {{"helloAngular" | translate}} </p>
+</code>
 </pre>
