@@ -52,11 +52,11 @@ Find the code for the HTML template,
 &lt;p&gt;
   {{ "Select language" | translate }} : 
   &lt;select (change)="onLangChange($event.target.value)"&gt;
-    &lt;optiongt;{{ "Select" | translate }}&lt;/optiongt;
-    &lt;option *ngFor="let lang of languages;" [value]="lang.code"gt; {{lang.lang}} &lt;/optiongt;
-  &lt;/selectgt;
+    &lt;optiongt;{{ "Select" | translate }}&lt;/option&gt;
+    &lt;option *ngFor="let lang of languages;" [value]="lang.code"gt; {{lang.lang}} &lt;/option&gt;
+  &lt;/select&gt;
 &lt;/p&gt;
-&lt;hello name="{{ name }}"gt;&lt;/hellogt;
+&lt;hello name="{{ name }}"gt;&lt;/hello&gt;
 &lt;p&gt;
   Start editing to see some magic happen :)
 &lt;/p&gt;
